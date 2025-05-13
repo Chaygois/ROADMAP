@@ -1,0 +1,116 @@
+ 2. Lógica + Codando Testes 
+
+🔧 Fundamentos de Programação para QA
+Antes de sair automatizando tudo, é preciso programar com clareza.
+
+🧠 Lógica Essencial:
+Condicionais & Loops: if/else, for, while — para criar testes dinâmicos e flexíveis
+
+Arrays e Objetos: entender como iterar dados e fazer asserções inteligentes
+
+Funções e Reutilização: DRY nos testes: helpers, fixtures, e funções utilitárias
+
+Callbacks & Promises/Async-Await: especialmente em Cypress, Playwright e Node.js
+
+Tratamento de Erros: try/catch nos testes, captura de exceções e logs úteis
+
+Boas práticas de código limpo: nomeação clara, indentação, modularização
+
+🧱 Estrutura de Automação de Testes
+Automação com propósito e arquitetura:
+
+AAA (Arrange–Act–Assert)
+Separar claramente preparação, execução e validação nos testes
+
+Page Object Model (POM)
+Separação entre lógica de página e lógica de teste. Testes legíveis, fáceis de manter
+
+Screenplay Pattern (avançado)
+Modelagem orientada a “atores e interações”, ideal para testes de comportamento
+
+Fixture Factories & Builders
+Criar dados dinâmicos e reutilizáveis para diferentes cenários
+
+Test Doubles: mocks, stubs e spies com ferramentas como Sinon, Jest ou Mockito
+
+🔁 Versionamento + Fluxo Colaborativo
+Git Basics: clone, pull, push, commits atômicos e mensagens descritivas
+
+Branching Models: Git Flow, trunk-based, feature branches
+
+PRs com propósito: revisões com foco em lógica de teste, clareza e manutenção
+
+CI/CD awareness: configurar pipelines para executar testes automaticamente
+
+📚 Estratégia de Automação de Testes
+Automatizar com ROI, não com desespero.
+
+ROI de Automação:
+Saber quando vale a pena automatizar com base em frequência de uso, risco e esforço de manutenção
+
+Pirâmide de Testes:
+
+Base: unitários (rápidos, baratos)
+
+Meio: integração (APIs, banco, lógica de negócio)
+
+Topo: E2E (validação de jornada completa, alto custo e frágil se mal feito)
+
+Teste determinístico vs. flaky
+
+Evitar testes instáveis, usar waits inteligentes, dados confiáveis e ambiente controlado
+
+Manutenção é o verdadeiro desafio
+
+Estratégias para modularização, limpeza de código legado e automação resiliente
+
+Refatoração contínua dos testes automatizados
+
+⚙️ Ferramentas e Stacks por Camada
+🌐 Front-End (UI/E2E):
+Selenium (Java/Python): clássico, ainda útil para casos legados e robustos
+
+Cypress (JavaScript/TypeScript): moderno, rápido, ótimo DX e debug
+
+Playwright (JS/TS/Python/.NET): suporte multiplataforma e testes paralelos nativos
+
+TestCafe (alternativa moderna com menos boilerplate)
+
+🌐 API:
+Postman + Newman: execução em CI, variações com environments e collections
+
+REST Assured (Java): poderoso, integração com testes JUnit/TestNG
+
+Supertest (Node.js): testes rápidos e leves em APIs Node
+
+Karate DSL: BDD para APIs com validações ricas e concisas
+
+📱 Mobile:
+Appium: multiplataforma (Android/iOS), controle de elementos e gestures
+
+Detox: ideal para React Native, testes rápidos e integrados com Jest
+
+🧪 Mocking e Dados:
+WireMock, Mockoon, MirageJS: simular APIs e controlar cenários
+
+Factory Libraries: Faker, Factory Girl/Boy para gerar dados dinâmicos de teste
+
+Geradores de massa de dados: CSVs, scripts SQL, ou seeding programático
+
+🗄️ Banco de Dados:
+MySQL/PostgreSQL/MongoDB
+
+Executar queries para validação de efeitos colaterais
+
+Criação e limpeza de dados de teste via seeders ou scripts
+
+Uso de fixtures no banco para cenários repetíveis
+
+🧭 Boa conduta na automação:
+💡 Automatize para acelerar aprendizado e garantir qualidade, não para substituir testes manuais inteligentes
+
+👁️‍🗨️ Leia falhas antes de reexecutar: falhas têm contexto valioso
+
+📦 Evite overengineering em testes: mantenha simples e confiáveis
+
+🧰 Tenha seu próprio toolkit de produtividade: snippets, aliases Git, templates de bug/testes
