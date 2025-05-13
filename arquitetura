@@ -1,0 +1,116 @@
+📊 4. Arquitetura de Qualidade e Estratégia de Testes
+🧠 Nível: “QA que senta com arquiteto e sabe o que tá falando”
+
+📈 Estratégias Avançadas de Testes
+✅ Cobertura de Testes Baseada em Risco
+Mapeamento de risco técnico x risco de negócio
+
+Ex: um fluxo de pagamento deve ter mais testes que o cadastro de perfil
+
+Fatores para priorização: frequência de uso, impacto financeiro, histórico de bugs
+
+Ferramentas de apoio: TestRail com tags de criticidade, dashboards em Excel/Notion para quick wins
+
+🧮 Matriz de Traceabilidade
+Relaciona requisitos ↔ casos de teste ↔ cenários automatizados ↔ bugs encontrados
+
+Garante que nenhuma funcionalidade importante seja ignorada
+
+Ferramentas: Xray (Jira), Zephyr, TestLink, Azure DevOps Test Plans
+
+🔁 Testes para Arquitetura de Microserviços
+Contrato de APIs (contract testing)
+
+Ferramentas: Pact, Spring Cloud Contract, Dredd
+
+Previne que uma mudança em um serviço quebre outro sem aviso
+
+Testes de integração entre serviços
+
+Simulam comunicação real: REST, gRPC, filas (Kafka, RabbitMQ)
+
+Testes paralelos e com dados independentes
+
+Estratégias para evitar conflito em ambiente compartilhado: data seeding, mocking
+
+👀 Observabilidade Aplicada ao QA
+Logs estruturados: facilidade para rastrear erros pós-deploy
+
+Tracing distribuído: conexão entre logs de microserviços (OpenTelemetry, Jaeger)
+
+Dashboards para qualidade:
+
+Sentry (erros de front/backend)
+
+Datadog/New Relic (métricas de app e infra)
+
+Grafana + Prometheus (alertas de performance, SLAs)
+
+QA pode configurar alertas com devs para:
+
+🟠 Alta taxa de erro em produção
+
+🟡 SLA estourado em rota crítica
+
+🔴 Falha silenciosa em background job
+
+🔧 Automação Escalável de Verdade
+🧩 Paralelismo e Execução Distribuída
+Selenium Grid + Docker Compose: executa múltiplos browsers em paralelo
+
+Playwright Test Runner: execução paralela por padrão, ótima cobertura cross-browser
+
+Cypress + GitHub Actions Matrix:
+
+Permite paralelizar testes por specs: --parallel --record
+
+Estratégia de sharding:
+
+Divide cenários grandes em múltiplas execuções menores
+
+☁️ Testes em Cloud (para dispositivos reais ou infra pesada)
+BrowserStack, SauceLabs, LambdaTest:
+
+Cross-browser, cross-device sem precisar manter lab físico
+
+Testes em iOS real, Android real, IE11 😬, resoluções específicas
+
+Headless vs Real Devices:
+
+Headless: rápido e ótimo para PRs
+
+Cloud devices: obrigatório para smoke test em produção ou teste visual/UX
+
+🧪 Testes Orientados a Dados (Data-Driven Testing)
+Gera múltiplos cenários com dados diferentes e lógica comum
+
+Exemplos:
+
+Login com múltiplos perfis
+
+Carrinho com diferentes combinações de produto/desconto
+
+Implementações:
+
+Cypress: .each() ou fixtures
+
+Java + JUnit/TestNG: @DataProvider
+
+Playwright + JSON loop
+
+🏗️ Framework Customizado vs Open Source
+Quando usar open-source puro:
+
+Projetos pequenos, curva de aprendizado baixa, tempo limitado
+
+Quando construir framework interno:
+
+Múltiplos times → precisa padronizar
+
+Reutilização entre squads (ex: DSL customizado de testes BDD)
+
+Integração com ferramentas específicas da empresa (logs internos, métricas, auth SSO)
+
+Exemplo de decisão técnica:
+
+“Vamos usar o Playwright + TestRunner nativo com um wrapper para gerar relatórios Allure, e estruturar nossos specs por domínio do microserviço. A infraestrutura será em Docker com execução paralela no CI via GitHub Actions Matrix.”
