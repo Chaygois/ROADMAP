@@ -1,0 +1,107 @@
+🔍 1. Fundamentos Técnicos de QA (Nível Júnior)
+🧑🏽‍💻 “Cai aqui de paraquedas mas tô com sede de aprender”
+
+🧠 1.1 Conhecimentos Essenciais
+SDLC & STLC
+
+Onde o QA se encaixa em cada fase do desenvolvimento e como influenciar qualidade desde o planejamento.
+
+Metodologias Ágeis e Lean
+
+Scrum (scrum events, papéis), Kanban (fluxo contínuo), Lean (eliminar desperdícios).
+
+Bug Lifecycle Profundo
+
+Desde a identificação até validação em produção; entender reabertura, regressão e “won’t fix”.
+
+Severidade × Prioridade
+
+Como mensurar impacto técnico, de negócio e usando modelos (como RICE ou MoSCoW).
+
+Controle de Versão (Git)
+
+Branching strategies (GitFlow, trunk-based) para criar ambientes estáveis de teste.
+
+🔍 1.2 Técnicas Clássicas de Teste
+Partição de Equivalência & Análise de Valor Limite
+
+Cobrir cenários representativos e bordas de input.
+
+Tabela de Decisão & Avaliação de Estado de Transição
+
+Mapear regras de negócio e estados do sistema para testar fluxos críticos.
+
+Heurísticas & Oráculos de Teste (EX: SFDPOT)
+
+Structure, Function, Data, Platform, Operations, Time para gerar testes efetivos.
+
+Testes Baseados em Riscos
+
+Analisar probabilidade × impacto para focar nos pontos mais críticos.
+
+Sessões de Teste Baseado em Charter
+
+Planejamento leve de missão (“charter”), tempo limitado, registrar descobertas e aprendizagens.
+
+Testes Exploratório vs. Scripted
+
+Combinar scripts formais com exploração livre para achar bugs inesperados.
+
+🔍 1.3 Testes Funcionais & Não-Funcionais
+Funcionais
+
+Caixa preta, caixa branca (simplificado), caixa cinza.
+
+Smoke, Sanity, Regressão, Integração (incluindo APIs).
+
+Não-Funcionais (Básico)
+
+Performance: checar tempos de resposta em cenários simples.
+
+Segurança: validar autenticação, autorização e entrada de dados (OWASP intro).
+
+Acessibilidade: usar Lighthouse, checar navegação por teclado, contraste.
+
+Usabilidade: sessões rápidas com usuários (guerrilla testing).
+
+🛠️ 1.4 Ferramentas e Ambientes
+Gerenciamento de Testes
+
+TestRail, Zephyr, TestLink (estruturar planos, matrizes e relatórios).
+
+Rastreamento de Bugs
+
+Jira + Xray/Zephyr: templates de relato, workflows, automações.
+
+Design & UI Review
+
+Figma, Zeplin, Storybook: validar componentes, tokens de design e responsividade.
+
+APIs & Contrato
+
+Postman, Insomnia, Hoppscotch: coleções, ambientes, testes de precondições.
+
+DevTools
+
+Console JS, Network Tab, Lighthouse (audit), Coverage Tab para primeiras inspeções.
+
+🧱 1.5 Boas Práticas de QA
+Documentação Leve
+
+Checklist de cobertura, “one-pager” do escopo de teste.
+
+Comunicação Eficaz de Bugs
+
+STR (Steps to Reproduce), Resultado Atual vs Esperado, logs, screenshots ou gravações.
+
+Priorização Baseada em Valor
+
+Impacto de negócio + esforço de correção → roadmap de testes.
+
+Métricas Iniciais
+
+Definir e acompanhar Test Pass Rate, Bug Severity Distribution, Lead Time de bugs.
+
+Mindset de Qualidade Contínua
+
+Estar presente desde refinamento de backlog até deploy e monitoramento pós-produção.
