@@ -1,0 +1,96 @@
+# 📚 Livros Técnicos 
+
+> Uma curadoria viva de livros que formam QAs técnicos, curiosos e respeitados — do Júnior ao Sênior, do Exploratório ao Deploy.
+
+---
+
+## 📘 Fundamentos de Testes & Qualidade
+
+| Livro | Por que ler |
+|-------|-------------|
+| **Clean Code** – Robert C. Martin | Porque testes também precisam ser legíveis, lindos e limpos |
+| **Explore It!** – Elisabeth Hendrickson | Aprender a testar sem seguir receita de bolo |
+| **Agile Testing** – Lisa Crispin & Janet Gregory | QA raiz em times ágeis, não só “scrum theater” |
+| **Test Obsessed** – Elisabeth Hendrickson *(grátis em PDF)* | Mentalidade de testes eficaz em contextos reais |
+| **Lessons Learned in Software Testing** – Kaner, Bach & Pettichord | Clássico sobre testes exploratórios e heurísticas |
+
+---
+
+## ⚙️ Automação de Testes
+
+| Livro | Por que ler |
+|-------|-------------|
+| **Selenium Testing Tools Cookbook** – Unmesh Gundecha | Receitas práticas para testes web com Selenium |
+| **The Art of Unit Testing** – Roy Osherove | Unidade com responsabilidade, mocks e boas práticas |
+| **Test Automation in the Real World** – Greg Paskal | O lado difícil (e real) da automação no dia a dia |
+| **Testing Java Microservices** – Alex Soto | Para entender contratos, REST, containers e testes em micros |
+
+---
+
+## 🧠 Estratégia de QA & DevOps
+
+| Livro | Por que ler |
+|-------|-------------|
+| **Continuous Delivery** – Jez Humble & David Farley | Base da integração contínua com qualidade |
+| **The DevOps Handbook** – Gene Kim et al. | QA como parte da entrega contínua, não um gargalo |
+| **Accelerate** – Nicole Forsgren | Métricas que mostram como qualidade acelera a entrega |
+| **Team Topologies** – Skelton & Pais | Como times de QA e dev se organizam para escalar qualidade |
+
+---
+
+## 🔐 Testes de Segurança
+
+| Livro | Por que ler |
+|-------|-------------|
+| **The Web Application Hacker’s Handbook** – Dafydd Stuttard | Visão hacker para QA testar de verdade |
+| **Security Testing Handbook for Banking Apps** – ISEC | Estratégias práticas para segurança em apps críticos |
+| **OWASP Testing Guide** – OWASP Foundation *(grátis online)* | Checklist técnico e moderno para QA em segurança |
+
+---
+
+## 📱 Testes Mobile
+
+| Livro | Por que ler |
+|-------|-------------|
+| **Mobile Testing** – Daniel Knott | Guia prático de estratégias, automação e UX mobile |
+| **Hands-On Mobile App Testing** – Daniel Knott | Casos reais, tipos de testes, ferramentas e boas práticas |
+| **Appium Essentials** – Manoj Hans | Para quem quer começar com Appium direto no código |
+
+---
+
+## 📊 Testes de Performance e Observabilidade
+
+| Livro | Por que ler |
+|-------|-------------|
+| **Web Performance in Action** – Jeremy Wagner | Como medir, melhorar e testar performance frontend |
+| **Site Reliability Engineering (SRE)** – Google | Para entender o impacto da qualidade em produção |
+| **Practical Monitoring** – Mike Julian | Logs, métricas e alertas do ponto de vista técnico e humano |
+
+---
+
+## 🤖 Testes em Machine Learning / IA
+
+| Livro | Por que ler |
+|-------|-------------|
+| **Machine Learning Engineering** – Andriy Burkov | Para QA entender como testar pipelines de ML |
+| **Reliable Machine Learning** – Nikhil Buduma | Testes, monitoramento e métricas de confiabilidade em IA |
+| **Validating ML Models** – Emeli Dral | Estratégias para validação, fairness e generalização |
+
+---
+
+## 🧭 Sugestão de leitura por trilha
+
+- **QA Júnior → Pleno**: Explore It!, Agile Testing, Clean Code, Selenium Cookbook  
+- **QA Técnico → Dev de Testes**: Testing Java Microservices, Continuous Delivery, The Art of Unit Testing  
+- **QA de Produto/Negócio → Estratégico**: Accelerate, Team Topologies, DevOps Handbook  
+- **QA Performance/SRE**: K6 Docs, SRE Book, Practical Monitoring  
+- **QA Security**: OWASP Guide, Web App Hacker’s Handbook  
+
+---
+
+## 💬 Sugestões?
+
+Você pode abrir um PR ou issue com o título:
+> ✍️ [Sugestão de Livro] Nome do livro – motivo
+
+Contribuições são bem-vindas 🙌
