@@ -1,0 +1,121 @@
+Integração Contínua, Performance e QA Técnico
+
+🔗 CI/CD e Integração com o Pipeline DevOps
+🧱 Testes no Ciclo de Build:
+Pipeline como Gatekeeper de Qualidade
+
+🔸 Etapas: install → lint → build → unit tests → e2e/api tests → coverage → deploy preview
+
+⚠️ Falha em qualquer etapa = bloqueia merge/deploy
+
+Pre-commit Hooks
+
+Husky, lint-staged: previnem código sujo antes mesmo do push
+
+Execuções por Ambiente
+
+Local (dev), Stage (QA), Nightly (build completo), Production (smoke de verificação)
+
+⚙️ Ferramentas de CI/CD:
+GitHub Actions
+
+Simples, nativo, ótimo para projetos open-source ou pequenos times
+
+GitLab CI
+
+Controle mais granular, ótimo para empresas com stack GitLab
+
+Jenkins
+
+Flexível e poderoso, mas requer manutenção
+
+CircleCI, Azure DevOps, Bitbucket Pipelines
+
+Variam em foco e integração — escolha depende da stack do time
+
+🐳 Docker + Infra de Teste:
+Rodar testes em containers isolados
+
+Selenium Grid via Docker, Browsers em headless, Cypress/Playwright containers
+
+Containers auxiliares em testes
+
+Mock servers (WireMock, Mockoon), Banco de dados em memória (H2, SQLite, MongoMemoryServer)
+
+Infra como código para QA
+
+Docker Compose para simular ambientes completos localmente e no CI
+
+✅ Cobertura, Lint e Relatórios:
+Code Coverage (Istanbul, JaCoCo, cobertura nativa)
+
+Usar como métrica auxiliar — cobertura não é garantia de bons testes
+
+Test Reports
+
+JUnit XML, Allure, mochawesome → para integração com CI, dashboards e rastreabilidade
+
+Linters e Formatadores
+
+ESLint, Prettier, Checkstyle, SonarQube → mantém padrão de código e saúde técnica
+
+🔥 Testes de Performance (sem precisar ser SRE)
+🧪 Ferramentas:
+K6 (JS): scriptável, leve e ótimo para CI
+
+Locust (Python): simples e poderoso para fluxos customizados
+
+JMeter: mais verboso, mas muito usado em legado e corporações
+
+🎯 Estratégias e Tipos:
+Load Test: verifica comportamento sob carga esperada
+
+Stress Test: empurra até quebrar, mede resiliência
+
+Spike Test: subida súbita de usuários
+
+Endurance Test: uso contínuo ao longo de horas/dias
+
+📊 Interpretação de Métricas:
+Response Time (P95, P99)
+
+Tempo de resposta máximo aceitável em 95% ou 99% dos casos
+
+Throughput (TPS/requests per second)
+
+Capacidade de processar requisições sustentadas
+
+Bottlenecks
+
+Identificar gargalos via CPU/memória, I/O, tempo de DB, fila, etc
+
+📉 Performance + CI:
+Automação de performance básica no pipeline
+
+Ex: rodar testes de carga toda madrugada
+
+Alertas via SLAs/SLIs definidos com o time
+
+Se tempo > X, ou erro > Y% → falha no pipeline
+
+Integração com dashboards
+
+Prometheus + Grafana, Elastic APM, Datadog, ou relatórios em Slack
+
+💎 QA Técnico ≠ só Automação
+📌 Outras entregas estratégicas do QA técnico pleno:
+Revisões técnicas de histórias e critérios de aceitação
+
+Evitar bugs antes mesmo do código nascer
+
+Design de testes de API com contrato (OpenAPI, Swagger)
+
+Detectar breaking changes antes de chegar ao front
+
+Testabilidade e Observabilidade
+
+Ajudar devs a construir código mais testável (injeção de dependência, logs, métricas)
+
+Mentoria interna e padronização
+
+Criar templates, guias de boas práticas e modelos de testes para o time
